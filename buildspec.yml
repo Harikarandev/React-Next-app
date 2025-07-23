@@ -16,7 +16,7 @@ phases:
       - echo Deploying to S3...
       - aws s3 sync build/ s3://my-react-app-bucket --delete
       - echo Invalidating CloudFront cache...
-      - aws cloudfront create-invalidation --distribution-id YOUR_CLOUDFRONT_DISTRIBUTION_ID --paths "/*"
+      - aws cloudfront create-invalidation --distribution-id d2q5d04uee06vg --paths "/*"
 
 artifacts:
   files:
